@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>      
+<head>
+    <title>Kevin's Sauces & Marinades</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="header"></div>
+<div class="title">
+    <p style="font-family: monospace; font-size: 20pt">How would you like to suffer today?</p></div>
+<div class="progress">
+    <img src="scale.jpg" class="scale">
+    </div>
+<div class="scale">
+    </div>
+<button class="collapsible">Hot Sauces</button>
+<div class="content">
+    <h3>Bravado Spice Co. Pineapple & Habanero</h3>
+        <img src="bravo1.webp" style="width:300px;height:300px;">
+    <div class="hotbar">
+    <div class="hot bravo1"></div>
+    </div>
+    <h3>Bravado Spice Co. AKA Miso Ghost-Reaper</h3>
+        <img src="bravo2.webp" style="width:300px;height:300px;">
+    <div class="hotbar">
+    <div class="hot bravo2"></div>
+    </div>
+    <h3>Elijah's Xtreme Regret Reserve</h3>
+        <img src="elijah2.webp" style="width:300px;height:300px;">
+    <div class="hotbar">
+    <div class="hot elijah2"></div>
+    </div>
+    <h3>Elijah's Xtreme Regret</h3>
+        <img src="elijah1.webp" style="width:300px;height:300px;">
+    <div class="hotbar">
+    <div class="hot elijah1"></div>
+    </div>
+    <h3>Good & Father Honey & Habanero Pepper</h3>
+        <img src="good1.webp" style="width:300px;height:300px;">
+    <div class="hotbar">
+    <div class="hot good1"></div>
+    </div>
+    <h3>Hot Ones Smokey Chipotle</h3>
+        <img src="hotones1.jpg" style="width:250px;height:300px;">
+    <div class="hotbar">
+    <div class="hot hotones1"></div>
+    </div>
+    <h3>Hot Ones The Last Dab XXX</h3>
+        <img src="last.webp" style="width:250px;height:350px;">
+    <div class="hotbar">
+        <div class="hot last"></div>
+    </div>
+    <h3>Secret Aardvark Aardvark Habanero</h3>
+        <img src="ard1.jpg" style="width:300px;height:270px;">
+    <div class="hotbar">
+    <div class="hot ard1"></div>
+    </div>
+    <h3>Secret Aardvark Serrabane Green Hot Sauce</h3>
+        <img src="ard4.jpg" style="width:300px;height:300px;">
+    <div class="hotbar">
+    <div class="hot ard4"></div>
+    </div>
+    <h3>Sriracha Hot Chili Sauce</h3>
+        <img src="sriracha.jpg" style="width:300px;height:300px;">
+    <div class="hotbar">
+    <div class="hot sriracha"></div>
+    </div>
+    <h3>Tabañero Sweet & Spicy</h3>
+        <img src="tab.jpg" style="width:300px;height:300px;">
+    <div class="hotbar">
+    <div class="hot tab"></div>
+    </div>
+    <h3>Tabasco Pepper Sauce</h3>
+        <img src="taba.jpg" style="width:300px;height:300px;">
+    <div class="hotbar">
+    <div class="hot taba"></div>
+    </div>
+</div>
+<button class="collapsible">Marinades</button>
+<div class="content">
+    <h3>Secret Aardvark Drunken Jerk Jamaican Marinade</h3>
+        <img src="ard2.jpg" style="width:300px;height:300px;">
+    <div class="hotbar">
+    <div class="hot ard2"></div>
+    </div>
+</div>
+<button class="collapsible">More Sauces</button>
+<div class="content">
+    <h3>Secret Aardvark Drunken Garlic Black Bean Sauce</h3>
+        <img src="ard3.jpg" style="width:300px;height:300px;">
+    <div class="hotbar">
+    <div class="hot ard3"></div>
+    </div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</body>
+</html>
